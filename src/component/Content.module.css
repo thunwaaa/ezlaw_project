@@ -3,7 +3,7 @@
 
 
 .block1 {
-    @apply font-prompt mt-20 w-11/12 h-96 rounded-2xl p-2.5 
+    @apply font-prompt mt-24 w-11/12 h-96 rounded-2xl p-2.5 
     m-auto bg-purple;
 }
 
@@ -22,13 +22,14 @@
 }
 
 .button {
-    @apply absolute left-330px top-342px h-10 px-6 flex items-center gap-2 
+    @apply relative ml-200px mb-0 -mt-11 h-10 px-6 flex items-center gap-2 
     bg-[#8B3A3A] hover:bg-[#6d2e2e] text-white 
     rounded-full transition-colors duration-200;
 }
 
 .booksIcon {
-    @apply w-96 float-end mr-72 -mt-350px  ;
+    @apply xl:w-96 float-end xl:mr-44 xl:-mt-350px 
+    lg:w-72 lg:relative lg:mr-28 lg:-mt-72;
     
 }
 
@@ -37,23 +38,32 @@
 }
 
 .b1 {
-    @apply w-44 h-12 bg-blue rounded-3xl -mt-72 -mr-56 ;
+    @apply xl:w-44 h-12 bg-blue rounded-3xl z-20
+    xl:-mt-72 xl:-mr-64
+    lg:-mt-64 lg:-mr-44 lg:w-36;
 }
 
 .b2 {
-    @apply w-32 h-12 bg-blue rounded-3xl -mt-44 ;
+    @apply bg-blue rounded-3xl z-10 h-12
+    xl:w-32 xl:-mt-44 xl:mr-1
+    lg:-mt-40 lg:mr-80 lg:w-28;
 }
 
 .b3 {
-    @apply w-48 h-12 bg-blue rounded-3xl -mt-64 absolute right-44;
+    @apply  bg-blue rounded-3xl absolute h-12
+    xl:w-48 xl:-mt-64 xl:right-20
+    lg:-mt-72 lg:w-32 lg:mr-3;
 }
 
 .b4 {
-    @apply w-24 h-12 bg-blue rounded-3xl absolute right-40 -mt-32;
+    @apply  h-12 bg-blue rounded-3xl absolute 
+    xl:-right-72 xl:-mt-32 xl:w-24
+    lg:w-20 lg:-mt-16 lg:mr-96;
 }
 
 .b5 {
-    @apply w-20 h-12 bg-blue rounded-3xl -mt-20 mr-4;
+    @apply w-20 h-12 bg-blue rounded-3xl xl:-mt-20 xl:mr-4
+    lg:-mt-32 lg:mr-1;
 }
 
 .line1 {

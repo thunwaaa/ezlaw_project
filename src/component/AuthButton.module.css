@@ -1,31 +1,59 @@
-.auth-button {
-    @apply rounded-full border-2 border-black px-6 py-2 text-lg font-medium transition-all hover:bg-black hover:text-white;
+/* AuthButton.css */
+.auth_button {
+    @apply font-prompt rounded-full border border-black pb-2
+    mx-2 mt-4 w-40 h-8 text-lg transition-all
+    hover:text-gray-500;
 }
   
-.dialog-content {
+.dialog_content {
     @apply sm:max-w-[425px] p-0;
 }
   
-.close-button {
+.close_button {
     @apply absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100;
 }
   
-.form-container {
+.icon {
+    @apply h-4 w-4;
+}
+  
+.tabs {
+    @apply w-full;
+}
+  
+.tabs_list {
+  @apply grid w-full grid-cols-2;
+}
+  
+.tab_trigger {
+    @apply text-lg;
+}
+  
+.tabs_content {
+    @apply p-6;
+}
+  
+.form {
     @apply space-y-4;
 }
   
-.form-group {
+.form_group {
     @apply space-y-2;
 }
   
-.submit-button {
+.input_field {
+    @apply rounded-lg border-2;
+}
+  
+.submit_button {
     @apply w-full bg-black text-white hover:bg-gray-800;
 }
   
-.forgot-password {
-    @apply text-center;
+.forgot_password {
+    @apply text-start;
 }
   
-.forgot-password-link {
+.forgot_password_link {
     @apply text-sm text-gray-600 hover:underline;
 }
+  

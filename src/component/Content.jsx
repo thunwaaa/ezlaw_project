@@ -1,5 +1,5 @@
 import styles from './Content.module.css'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Search } from 'lucide-react';
 
 const content = () => {
@@ -13,6 +13,23 @@ const content = () => {
     <>
     <section className={styles.block1}>
         <h1>ทำกฏหมาย <br /> ให้เป็นเรื่องง่าย!</h1>
+        <div className={styles.container}>
+          <form onSubmit={handleSubmit} className={styles.searchContainer}>
+            <div className={styles.inputWrapper}>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="ค้นหากฎหมาย"
+                className={styles.input}
+              />
+              <button type="submit" className={styles.button}>
+                <Search className={styles.searchIcon} />
+                <span>ค้นหา</span>
+              </button>
+            </div>
+          </form>
+        </div>
         <img className={styles.booksIcon} src="/Image/booksnapple.png" alt="" />
         <div className= {styles.b_container}>
           <div className={styles.b1}></div>

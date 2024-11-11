@@ -9,8 +9,8 @@ export default {
   theme: {
   	extend: {
   		fontFamily: {
-  			taviraj: ['Taviraj', 'serif'],
-  			prompt: ['Prompt"', 'sans-serif']
+  			taviraj: 'Taviraj',
+  			prompt: 'Prompt',
   		},
   		colors: {
   			red: '#8E3635',
@@ -65,11 +65,13 @@ export default {
   			'25px': '25px'
   		},
   		inset: {
-  			'342px': '342px',
-  			'330px': '330px'
+  			'358px': '358px',
+  			'328px': '328px'
   		},
   		margin: {
-  			'350px': '350px'
+  			'350px': '350px',
+  			'520px': '520px',
+			'200px': '200px'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

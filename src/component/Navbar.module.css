@@ -3,7 +3,7 @@
 
 
 nav {
-    @apply flex items-center justify-between px-8 py-4 fixed w-full top-0 z-50;
+    @apply flex items-center justify-between px-8 py-4 fixed w-full h-20 top-0 z-50 bg-white;
 }
 
 .logo {
@@ -15,7 +15,7 @@ nav {
 }
 
 .iconpremium {
-    @apply  fixed w-7 top-2 right-60 z-20;
+    @apply  relative w-7 -top-12 -right-16 z-20;
 }
     
 .premium {
@@ -48,22 +48,3 @@ ul li:hover ul.dropdown {
     @apply block
 }
 
-.container {
-    @apply inline-flex rounded-full border border-black ml-3 w-48 h-8 justify-center;
-}
-  
-.button {
-    @apply rounded-full transition-all duration-200;
-}
-  
-.buttonActive {
-    @apply text-gray-500;
-}
-  
-.buttonInactive {
-    @apply bg-transparent text-black hover:text-gray-600;
-}
-  
-.divider {
-    @apply text-black flex items-center mx-4;
-}
