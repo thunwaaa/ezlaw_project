@@ -44,6 +44,9 @@ const content = () => {
       <h1 className={styles.law_cate}>กฏหมาย</h1>
       <hr className={styles.line2} />
     </div>
+    <article>
+      
+    </article>
     </>
   )
 }
