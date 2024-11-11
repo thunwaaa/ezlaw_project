@@ -1,0 +1,31 @@
+.auth-button {
+    @apply rounded-full border-2 border-black px-6 py-2 text-lg font-medium transition-all hover:bg-black hover:text-white;
+}
+  
+.dialog-content {
+    @apply sm:max-w-[425px] p-0;
+}
+  
+.close-button {
+    @apply absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100;
+}
+  
+.form-container {
+    @apply space-y-4;
+}
+  
+.form-group {
+    @apply space-y-2;
+}
+  
+.submit-button {
+    @apply w-full bg-black text-white hover:bg-gray-800;
+}
+  
+.forgot-password {
+    @apply text-center;
+}
+  
+.forgot-password-link {
+    @apply text-sm text-gray-600 hover:underline;
+}

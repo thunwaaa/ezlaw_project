@@ -1,12 +1,9 @@
+import { AuthButton } from './AuthButton';
 import styles from './Navbar.module.css'
-import { useState } from "react";
+
 
 const Navbar = () => {
-    const [selected, setSelected] = useState(null);
-  
-    const handleClick = (type) => {
-      setSelected(selected === type ? null : type);
-    }
+    
   return (
     <nav className={styles.nav}>
         <div className={styles.logo}>EZLAW</div>
@@ -21,26 +18,7 @@ const Navbar = () => {
             </li>
             
             <button className={styles.premium}>ปรึกษาทนาย <img className = {styles.iconpremium}src="/Image/crownIcon.png" alt="" /></button>
-            <div className={styles.container}>
-              <button
-                onClick={() => handleClick("signin")}
-                className={`${styles.button} ${
-                selected === "signin" 
-                ? styles.buttonActive : styles.buttonInactive
-                }`}
-              >
-                Sign in
-              </button>
-              <div className={styles.divider}>|</div>
-              <button
-                onClick={() => handleClick("signup")}
-                className={`${styles.button} ${
-                selected === "signup" ? styles.buttonActive : styles.buttonInactive
-                }`}
-              >
-                Sign up
-              </button>
-            </div>
+            <AuthButton />
         </ul>
     </nav>
   )
