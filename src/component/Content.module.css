@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj&display=swap');
+
+
+.block1 {
+    @apply font-prompt mt-20 w-11/12 h-96 rounded-2xl p-2.5 
+    m-auto bg-purple;
+}
+
+.block1 h1 {
+    @apply text-grey text-5xl leading-tight font-semibold py-16 px-14;
+}
+
+.container{
+    @apply px-14 pb-10;
+}
+
+.input {
+    @apply w-80 h-12 px-4 rounded-full border border-gray-200 
+    outline-none bg-white shadow-sm transition-all duration-200 
+    focus:border-[#8B3A3A] focus:ring-2 focus:ring-[#8B3A3A]/20;
+}
+
+.button {
+    @apply absolute left-330px top-342px h-10 px-6 flex items-center gap-2 
+    bg-[#8B3A3A] hover:bg-[#6d2e2e] text-white 
+    rounded-full transition-colors duration-200;
+}
+
+.booksIcon {
+    @apply w-96 float-end mr-72 -mt-350px  ;
+    
+}
+
+.b_container {
+    @apply flex justify-end text-center;
+}
+
+.b1 {
+    @apply w-44 h-12 bg-blue rounded-3xl -mt-72 -mr-56 ;
+}
+
+.b2 {
+    @apply w-32 h-12 bg-blue rounded-3xl -mt-44 ;
+}
+
+.b3 {
+    @apply w-48 h-12 bg-blue rounded-3xl -mt-64 absolute right-44;
+}
+
+.b4 {
+    @apply w-24 h-12 bg-blue rounded-3xl absolute right-40 -mt-32;
+}
+
+.b5 {
+    @apply w-20 h-12 bg-blue rounded-3xl -mt-20 mr-4;
+}
+
+.line1 {
+    @apply w-1/3 float-left ml-16 border-2 mt-7 rounded-full ; 
+}
+
+.law_cate {
+    @apply font-prompt text-3xl w-48 p-2 text-center mx-auto;
+}
+
+.line2 {
+    @apply w-1/3 float-right mr-16 border-2 -mt-6 rounded-full;
+}
